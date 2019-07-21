@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;INIT=RUNSCRIPT from 'classpath:sql/credit_card_processing_schema.sql';DB_CLOSE_DELAY=-1
+    vendor: H2
+    username: sa
+    password:
+  jpa:
+    schemaUpdate: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
